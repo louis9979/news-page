@@ -1,13 +1,9 @@
 body {
-  height: 100vh;
-  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  background-color: #ececec;
-  box-sizing: border-box;
-  position: relative; }
+  box-sizing: border-box; }
 
 *,
 *:before,
@@ -15,23 +11,131 @@ body {
   margin: 0;
   padding: 0; }
 
+.main {
+  height: 1024px;
+  width: 1440px; }
+
+.logo {
+  position: absolute;
+  top: 33px;
+  left: 59px;
+  width: 186.87px;
+  height: 45.63px;
+  color: aqua;
+  z-index: 2000; }
+
 .navigation-side {
   position: absolute;
-  width: 21.1vh;
+  width: 304px;
   height: 1024px;
   left: 0;
   top: 0;
-  background: red; }
+  background: red;
+  border-radius: 0 15px 15px 0;
+  z-index: 100; }
+
+.pages {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 112px;
+  left: 16px; }
+
+.item {
+  width: 272px;
+  height: 56px;
+  border: black 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkmagenta; }
 
 .main-page {
   position: absolute;
-  width: 78vw;
+  width: 1333px;
   height: 1025px;
   left: 107px;
   top: 14px;
-  background-color: rgba(217, 255, 0, 0.5);
+  background: rgba(196, 250, 2, 0.8); }
+
+.navigation-top {
+  position: absolute;
+  width: 1072px;
+  height: 48px;
+  right: 32px;
+  top: 18px;
+  background-color: blue; }
+
+.explore-channel {
+  position: absolute;
+  width: 1072px;
+  height: 222px;
+  right: 32px;
+  top: 93px; }
+  .explore-channel-title {
+    padding-bottom: 32px; }
+
+.catergories {
+  position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding-left: 32px;
+  height: 158px;
+  right: 0; }
+
+.cards {
+  width: 152px;
+  height: 158px;
+  margin: 0 16px;
+  background-color: #757575;
+  border-radius: 15px;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 18px 32px 16px 226px; }
+  align-items: center; }
+  .cards:nth-child(6) {
+    margin-right: 0; }
+
+.todays-headlines {
+  position: absolute;
+  width: 1072px;
+  height: 288px;
+  left: 229px;
+  top: 363px;
+  padding-bottom: 16px; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 32px; }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  width: 336px;
+  height: 96px; }
+
+.featured-news {
+  position: absolute;
+  width: 1072px;
+  height: 310px;
+  left: 229px;
+  top: 699px;
+  background-color: chartreuse; }
+
+.dishes {
+  position: absolute;
+  display: flex;
+  flex-direction: row; }
+
+.card {
+  width: 336px;
+  height: 246px;
+  margin: 32px 32px 0 0;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

@@ -1,16 +1,1 @@
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  background-color: rgba(236, 236, 236, 1);
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-}
+@import 'pages/home';

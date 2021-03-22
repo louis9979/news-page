@@ -5,15 +5,17 @@ body {
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  background-color: #ececec;
+  background-color: rgba(236, 236, 236, 1);
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+}
 
 *,
 *:before,
 *:after {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .navigation-side {
   position: absolute;
@@ -21,7 +23,8 @@ body {
   height: 1024px;
   left: 0;
   top: 0;
-  background: red; }
+  background: red;
+}
 
 .main-page {
   position: absolute;
@@ -34,4 +37,5 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 18px 32px 16px 226px; }
+  padding: 18px 32px 16px 226px;
+}

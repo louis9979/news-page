@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  // background-color: $main-bgc;
 }
 
 *,
@@ -22,26 +23,27 @@ button {
   height: 100vh;
   width: 304px;
   background-color: red;
+  border-radius: 0 15px 15px 0;
 }
 
 .main-content {
   width: calc(100vw-304px);
   margin-left: 304px;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(192, 192, 192, 0.5);
   padding: 16px 32px;
   position: relative;
 }
 
 // COLORS
 $heading-primary: #182135;
-$main-bgc: rgba(255, 255, 255, 0.5);
+$main-bgc: rgba(192, 192, 192, 0.5);
 
 // TOP NAV
 .header {
   width: 100%;
   margin-bottom: 31px;
-  background: orange;
+  background: rgba(192, 192, 192, 0.5);
   display: flex;
 
   &-button {
@@ -56,14 +58,14 @@ $main-bgc: rgba(255, 255, 255, 0.5);
 // HEADINGS
 .heading {
   width: 100%;
-  margin-bottom: 30px;
-  background-color: rgb(214, 214, 213);
+  // margin-bottom: 30px;
+  // background-color: $main-bgc;
 }
 
 .heading-top {
   display: flex;
   color: $heading-primary;
-  font-size: 24px;
+  font-size: 25px;
 }
 
 .see-all {
@@ -77,11 +79,42 @@ $main-bgc: rgba(255, 255, 255, 0.5);
 // CONTAINERS
 
 // EXPLORE
+// .explore-channels {
+//   width: 100%;
+//   height: 20px;
+//   margin-bottom: 30px;
+//   background-color: orange;
+//   display: flex;
+// }
+
 .explore-channels {
-  width: 100%;
-  height: 20px;
-  margin-bottom: 30px;
-  background-color: orange;
+  display: flex;
+  flex-direction: row;
+  // background-color: rgba(192, 192, 192, 0.5);
+  margin-bottom: 32px;
+}
+
+.catergories {
+  position: relative;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  // height: 158px;
+  background-color: white;
+  border-radius: 15px;
+  margin-right: 32px;
+  width: calc(16.66% - 32px);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.explore-img {
+  margin: 36px 48px 27px 48px;
+  width: 56px;
 }
 
 // HEADLINES
@@ -97,12 +130,6 @@ $main-bgc: rgba(255, 255, 255, 0.5);
   flex-direction: column;
 }
 
-.headline-heading {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
 .headline-card {
   width: calc(33.3% - 32px);
   margin-right: 32px;
@@ -111,8 +138,13 @@ $main-bgc: rgba(255, 255, 255, 0.5);
   display: flex;
 }
 
-.headline-img,
-img {
+.headline-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.headline-img {
   display: flex;
   height: 96px;
   width: 96px;

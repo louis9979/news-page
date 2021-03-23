@@ -32,17 +32,15 @@ button {
   margin-bottom: 31px;
   background: orange;
   display: flex; }
-
-.header-button {
-  margin-right: 20px; }
-
-.header-input {
-  margin-left: auto; }
+  .header-button {
+    margin-right: 20px; }
+  .header-input {
+    margin-left: auto; }
 
 .heading {
   width: 100%;
   margin-bottom: 30px;
-  background-color: orange; }
+  background-color: #d6d6d5; }
 
 .heading-top {
   display: flex;
@@ -68,11 +66,20 @@ button {
   flex-wrap: wrap;
   position: relative; }
 
+.headline-info {
+  display: flex;
+  flex-direction: column; }
+
+.headline-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; }
+
 .headline-card {
   width: calc(33.3% - 32px);
   margin-right: 32px;
   margin-top: 32px;
-  background-color: pink; }
+  display: flex; }
 
 .headline-img,
 img {
@@ -80,3 +87,12 @@ img {
   height: 96px;
   width: 96px;
   border-radius: 15px; }
+
+.headline-base {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto; }
+
+.headline-time {
+  margin-left: auto;
+  margin-top: auto; }

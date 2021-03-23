@@ -13,10 +13,6 @@ body {
   padding: 0;
 }
 
-.main {
-  height: 1024px;
-  width: 1440px;
-}
 .logo {
   position: absolute;
   top: 33px;
@@ -28,7 +24,7 @@ body {
 }
 
 .navigation-side {
-  position: absolute;
+  position: relative;
   width: 304px;
   height: 1024px;
   left: 0;
@@ -57,11 +53,11 @@ body {
 }
 
 .main-page {
-  position: absolute;
+  position: relative;
   width: 1333px;
   height: 1025px;
   left: 107px;
-  top: 14px;
+  top: -1010px;
   background: rgba(196, 250, 2, 0.8);
 }
 

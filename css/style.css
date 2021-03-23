@@ -53,7 +53,7 @@ button {
   margin-left: auto;
   font-weight: 300;
   font-size: 16px;
-  color: blue;
+  color: #503e9d;
   background-color: transparent; }
 
 .explore-channels {
@@ -69,8 +69,14 @@ button {
   position: relative; }
 
 .headline-card {
-  height: 60px;
   width: calc(33.3% - 32px);
   margin-right: 32px;
   margin-top: 32px;
   background-color: pink; }
+
+.headline-img,
+img {
+  display: flex;
+  height: 96px;
+  width: 96px;
+  border-radius: 15px; }

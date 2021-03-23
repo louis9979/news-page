@@ -8,6 +8,11 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
+button {
+  border: none;
+  padding: 6px 8px;
+  background: grey; }
+
 .sidebar {
   position: fixed;
   height: 100vh;
@@ -18,6 +23,54 @@ body {
   width: calc(100vw-304px);
   margin-left: 304px;
   height: 100vh;
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 16px 32px;
   position: relative; }
+
+.header {
+  width: 100%;
+  margin-bottom: 31px;
+  background: orange;
+  display: flex; }
+
+.header-button {
+  margin-right: 20px; }
+
+.header-input {
+  margin-left: auto; }
+
+.heading {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: orange; }
+
+.heading-top {
+  display: flex;
+  color: #182135;
+  font-size: 24px; }
+
+.see-all {
+  margin-left: auto;
+  font-weight: 300;
+  font-size: 16px;
+  color: blue;
+  background-color: transparent; }
+
+.explore-channels {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 30px;
+  background-color: orange; }
+
+.headline-items {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative; }
+
+.headline-card {
+  height: 60px;
+  width: calc(33.3% - 32px);
+  margin-right: 32px;
+  margin-top: 32px;
+  background-color: pink; }

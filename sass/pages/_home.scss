@@ -13,14 +13,50 @@ body {
   padding: 0;
 }
 
+.logos {
+  display: flex;
+}
+
 .logo {
-  position: absolute;
+  position: relative;
   top: 33px;
   left: 59px;
-  width: 186.87px;
+  width: fit-content;
   height: 45.63px;
-  color: aqua;
   z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 5px 0 5px 10px;
+  transform: skewX(-15deg);
+  margin-bottom: 33px;
+
+  &-daily {
+    text-transform: uppercase;
+    font-size: 28.8px;
+    padding: 0 20px;
+    transform: skewX(15deg);
+    color: white;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+  }
+
+  // &-img {
+  //   width: 50px;
+  //   background-color: red;
+  //   padding: 15px 0 15px 20px;
+  // }
+}
+
+svg {
+  position: absolute;
+  color: white;
+  background-color: blue;
+  width: 63px;
+  display: inline-flex;
+  align-self: center;
 }
 
 .navigation-side {
@@ -38,7 +74,7 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 112px;
+  padding-top: 33px;
   left: 16px;
 }
 
@@ -120,7 +156,7 @@ body {
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
   background-color: #2196f3;
-  padding: 32px;
+  padding: 32px 32px 32px 0;
 }
 
 .grid-container > div {

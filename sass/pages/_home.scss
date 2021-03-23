@@ -14,8 +14,6 @@ body {
 
 button {
   border: none;
-  padding: 6px 8px;
-  background: grey;
 }
 
 // LAYOUT
@@ -40,22 +38,6 @@ button {
 // COLORS
 $heading-primary: #182135;
 $main-bgc: rgba(192, 192, 192, 0.5);
-
-// TOP NAV
-.header {
-  width: 100%;
-  margin-bottom: 31px;
-  background: rgb(212, 212, 212);
-  display: flex;
-
-  &-button {
-    margin-right: 20px;
-  }
-
-  &-input {
-    margin-left: auto;
-  }
-}
 
 // HEADINGS
 .heading {
@@ -86,8 +68,108 @@ $main-bgc: rgba(192, 192, 192, 0.5);
   border-radius: 50%;
   margin-left: 16px;
 }
-.right-btn {
-  margin-left: 16px;
+
+// .right-btn {
+//   margin-left: 16px;
+//   width: 46px;
+//   background-color: rgb(76, 19, 114);
+//   color: rgb(76, 19, 114);
+// }
+
+.navigation {
+  &-checkbox {
+    display: none;
+  }
+
+  &-button {
+    background-color: rgb(110, 21, 138);
+    height: 48px;
+    width: 48px;
+    border-radius: 15px;
+    box-shadow: 0 0.8rem 1rem rgba(black, 0.1);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  span {
+    margin-right: 1.5rem;
+    display: inline-block;
+  }
+
+  &-icon {
+    position: relative;
+    margin-top: 24px;
+
+    &,
+    &::before,
+    &::after {
+      width: 25px;
+      height: 3px;
+      background-color: rgba(white, 1);
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all 0.4s;
+    }
+
+    &::before {
+      top: -0.5rem;
+    }
+
+    &::after {
+      top: 0.5rem;
+    }
+  }
+}
+
+&-button:hover &-icon::before {
+  top: -1.2rem;
+}
+
+&-button:hover &-icon::after {
+  top: 1.2rem;
+}
+
+&-checkbox:checked + &-button &-icon {
+  background-color: transparent;
+}
+
+&-checkbox:checked + &-button &-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+&-checkbox:checked + &-button &-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 31px;
+  display: flex;
+
+  &-button {
+    margin-right: 20px;
+  }
+
+  &-input {
+    margin-left: auto;
+    height: 48px;
+    width: 385px;
+  }
+
+  &-input::placeholder {
+    font-size: 24px;
+    font-weight: 400;
+    color: blue;
+  }
 }
 
 // EXPLORE

@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(245, 244, 244);
 }
 
 button {
@@ -22,15 +23,16 @@ button {
   position: fixed;
   height: 100vh;
   width: 304px;
-  background-color: red;
-  border-radius: 0 15px 15px 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 25px 25px 0;
+  z-index: 10;
 }
 
 .main-content {
-  width: calc(100vw-304px);
+  width: calc(100vw - 304px);
   margin-left: 304px;
   height: 100vh;
-  background-color: rgba(192, 192, 192, 0.5);
+  background-color: rgb(245, 244, 244);
   padding: 16px 32px;
   position: relative;
 }
@@ -43,7 +45,7 @@ $main-bgc: rgba(192, 192, 192, 0.5);
 .header {
   width: 100%;
   margin-bottom: 31px;
-  background: rgba(192, 192, 192, 0.5);
+  background: rgb(212, 212, 212);
   display: flex;
 
   &-button {
@@ -78,6 +80,16 @@ $main-bgc: rgba(192, 192, 192, 0.5);
 
 // CONTAINERS
 
+// HEADER
+.header-img {
+  width: 48px;
+  border-radius: 50%;
+  margin-left: 16px;
+}
+.right-btn {
+  margin-left: 16px;
+}
+
 // EXPLORE
 // .explore-channels {
 //   width: 100%;
@@ -97,6 +109,7 @@ $main-bgc: rgba(192, 192, 192, 0.5);
 .catergories {
   position: relative;
   display: flex;
+  margin-top: 32px;
 }
 
 .card {
@@ -105,19 +118,29 @@ $main-bgc: rgba(192, 192, 192, 0.5);
   // height: 158px;
   background-color: white;
   border-radius: 15px;
+  padding: 32px 25px 16px 25px;
   margin-right: 32px;
   width: calc(16.66% - 32px);
   justify-content: center;
   align-items: center;
-  margin-bottom: auto;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .explore-img {
-  margin: 36px 48px 27px 48px;
-  width: 56px;
+  width: 50%;
+
+  margin-bottom: 27px;
 }
 
 // HEADLINES
+.headline {
+  margin-bottom: 32px;
+}
+
 .headline-items {
   list-style: none;
   display: flex;
@@ -142,9 +165,11 @@ $main-bgc: rgba(192, 192, 192, 0.5);
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  padding-top: 5px;
 }
 
 .headline-img {
+  margin-right: 20px;
   display: flex;
   height: 96px;
   width: 96px;

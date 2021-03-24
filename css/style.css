@@ -35,7 +35,7 @@ button {
   z-index: 10; }
 
 .main-content {
-  width: calc(100vw - 304px);
+  width: calc(100vw - 336px);
   margin-left: 304px;
   height: 100vh;
   background-color: #f8f8f8;
@@ -57,6 +57,21 @@ button {
   color: #503e9d;
   background-color: transparent; }
 
+.sidebar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 76px;
+  background-color: transparent; }
+
+.sidebar-nav {
+  background-color: transparent;
+  list-style: none; }
+
+.sidebar-items {
+  background-color: transparent;
+  line-height: 15px; }
+
 .header-img {
   width: 48px;
   border-radius: 50%;
@@ -66,7 +81,7 @@ button {
   display: none; }
 
 .navigation-button {
-  background-color: #6e158a;
+  background-color: #503e9d;
   height: 48px;
   width: 48px;
   border-radius: 15px;
@@ -125,7 +140,8 @@ button {
     font-size: 14px;
     justify-content: center; }
     .header-button-image {
-      display: flex; }
+      transform: translateY(25%);
+      color: yellow; }
   .header-input {
     margin-left: auto;
     height: 48px;
@@ -133,10 +149,12 @@ button {
     border: none;
     background-color: white;
     border-radius: 15px;
-    padding: 0 2rem; }
+    padding: 0 2rem;
+    transition: all 0.5s; }
     .header-input:focus:invalid {
       border-bottom: 3px solid red; }
     .header-input:focus {
+      transform: translateY(-3px);
       border-bottom: 3px solid green;
       outline: none;
       font-size: 24px;
@@ -154,7 +172,8 @@ button {
 .catergories {
   position: relative;
   display: flex;
-  margin-top: 32px; }
+  margin-top: 32px;
+  margin-right: -32px; }
 
 .card {
   display: flex;
@@ -170,7 +189,8 @@ button {
   font-weight: 600;
   color: black;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .explore-img {
   width: 50%;
@@ -183,23 +203,14 @@ button {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  position: relative; }
-
-.headline-info {
-  display: flex;
-  flex-direction: column; }
+  position: relative;
+  margin-right: -32px; }
 
 .headline-card {
   width: calc(33.3% - 32px);
   margin-right: 32px;
   margin-top: 32px;
   display: flex; }
-
-.headline-heading {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding-top: 5px; }
 
 .headline-img {
   margin-right: 20px;
@@ -208,18 +219,30 @@ button {
   width: 96px;
   border-radius: 15px; }
 
+.headline-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.headline-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-top: 5px; }
+
 .headline-base {
   display: flex;
   flex-direction: row;
   margin-top: auto; }
 
 .headline-time {
-  margin-left: 7rem;
+  margin-left: auto;
   margin-top: auto; }
 
 .news-2 {
   display: flex;
-  position: relative; }
+  position: relative;
+  margin-right: -32px; }
 
 .news-container {
   display: flex;

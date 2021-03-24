@@ -9,18 +9,37 @@
 <body>
   <!-- SIDEBAR -->
 
-  <section class="sidebar"></section>
+  <section class="sidebar">
+    <div class="sidebar-list">
+      <ul class="sidebar-nav">
+        <li class="sidebar-items">home</li>
+        <li class="sidebar-items">Explore</li>
+        <li class="sidebar-items">Saved</li>
+        <li class="sidebar-items">Subscriptions</li>
+        <li class="sidebar-items">Messages</li>
+        <li class="sidebar-items">Settings</li>
+        <li class="sidebar-items">Logout</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- HEADER -->
 
   <section class="main-content">
     <div class="header">
-      <button class="header-button">San Francisco, Californa &#8691;</button>
-      <button class="header-button">Analysis &#8691;</button>
+      <button class="header-button">
+        <img alt class="header-button-image" src="img/location_searching-black-24dp.svg" />San Francisco, Californa &#8691;
+      </button>
+      <button class="header-button">
+        <img alt class="header-button-image" src="img/pie_chart-black-24dp.svg" />Analysis &#8691;
+      </button>
       <button class="header-button">
         <img alt class="header-button-image" src="img/calendar_today-black-24dp.svg" /> Monthly &#8691;
       </button>
-      <input class="header-input" placeholder=" &#9906; search for anything..." type="text" />
+      <input class="header-input"
+             placeholder=" &#9906; search for anything..."
+             required
+             type="text" />
 
       <input class="navigation-checkbox" id="navi-toggle" type="checkbox" />
       <label class="navigation-button" for="navi-toggle">

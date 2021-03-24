@@ -12,6 +12,17 @@ body {
 button {
   border: none; }
 
+.news-link {
+  background-color: rgba(80, 62, 157, 0.1);
+  color: #503e9d;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none; }
+
 .sidebar {
   position: fixed;
   height: 100vh;
@@ -56,40 +67,15 @@ button {
   height: 48px;
   width: 48px;
   border-radius: 15px;
-  z-index: 202;
   box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   text-align: center;
-  transition: all 0.5s; }
-
-.navigation-link:link, .navigation-link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-  background-size: 230%;
   transition: all 0.5s;
-  flex-direction: row; }
-  .navigation-link:link span, .navigation-link:visited span {
-    margin-right: 1.5rem;
-    display: inline-block; }
+  margin-left: 20px; }
 
-.navigation-link:active, .navigation-link:hover {
-  transform: scale(1.1) rotate(-3deg) translateX(4rem);
-  background-position: 100%;
-  color: blue;
-  box-shadow: -2rem 1.5rem 2rem rgba(0, 0, 0, 0.6); }
-
-.navigation-checkbox:checked ~ .navigation-background {
-  transform: scale(80); }
-
-.navigation-checkbox:checked ~ .navigation-nav {
-  width: 100%;
-  opacity: 1; }
+.navigation span {
+  margin-right: 1.5rem;
+  display: inline-block; }
 
 .navigation-icon {
   position: relative;
@@ -131,11 +117,27 @@ button {
   margin-bottom: 31px;
   display: flex; }
   .header-button {
-    margin-right: 20px; }
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    justify-content: center; }
+    .header-button-image {
+      display: flex; }
   .header-input {
     margin-left: auto;
     height: 48px;
-    width: 385px; }
+    width: 385px;
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    padding: 0 2rem; }
+    .header-input:focus:invalid {
+      border-bottom: 3px solid red; }
+    .header-input:focus {
+      border-bottom: 3px solid green;
+      outline: none;
+      font-size: 24px;
+      font-weight: 400; }
   .header-input::placeholder {
     font-size: 24px;
     font-weight: 400;
@@ -144,7 +146,7 @@ button {
 .explore-channels {
   display: flex;
   flex-direction: row;
-  margin-bottom: 32px; }
+  margin-bottom: 31px; }
 
 .catergories {
   position: relative;

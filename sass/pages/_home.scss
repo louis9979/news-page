@@ -93,11 +93,16 @@ $primary-clr: #503e9d;
 .sidebar-nav {
   background-color: transparent;
   list-style: none;
+  height: 100vh;
 }
 
 .sidebar-items {
   background-color: transparent;
-  line-height: 15px;
+  line-height: 45px;
+}
+
+.sidebar-items:last-child {
+  margin-top: 100px;
 }
 
 // HEADER

@@ -6,8 +6,7 @@ body {
 *:after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #f8f8f8; }
+  box-sizing: border-box; }
 
 h1,
 h2,
@@ -44,17 +43,18 @@ a {
 
 .sidebar {
   position: fixed;
+  top: 0;
   height: 100vh;
   width: 19rem;
   padding: 1rem;
-  background-color: #fcfcfc;
+  background-color: #eeeeee;
   border-radius: 0 25px 25px 0;
   z-index: 10;
   box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.3); }
 
 .main-content {
   width: calc(100vw - 336px);
-  margin-left: 304px;
+  margin-left: 290px;
   height: 100vh;
   background-color: #f8f8f8;
   padding: 16px 32px;
@@ -108,8 +108,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 76px;
-  background-color: transparent;
-  height: 30rem; }
+  background-color: transparent; }
 
 .sidebar-nav {
   background-color: transparent;
@@ -129,7 +128,7 @@ a {
 
 .sidebar-items {
   background-color: transparent;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   color: #182135;
   transition: all 0.3s;
@@ -138,12 +137,13 @@ a {
   .sidebar-items-logout {
     margin-top: 55px;
     background-color: transparent;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     color: #182135;
     transition: all 0.3s;
     font-size: 1rem;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 5px; }
     .sidebar-items-logout:hover, .sidebar-items-logout:focus {
       color: #503e9d;
       font-weight: 600;
@@ -161,10 +161,115 @@ a {
   background-color: rgba(192, 192, 192, 0.5);
   border-radius: 4px; }
 
+.promotion-card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  top: 34px;
+  z-index: 303;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1); }
+
+.promotion-card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  transform: scale(0.93);
+  top: -292px;
+  z-index: 302;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1); }
+
+.promotion-card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  transform: scale(0.88);
+  top: -622px;
+  z-index: 301;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1); }
+
+.cross-line:before {
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(45deg); }
+
+.cross {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -15px;
+  left: 125px;
+  padding: 0; }
+  .cross:hover {
+    background-color: transparent; }
+
+.cross-line {
+  width: 20px;
+  height: 2px;
+  transform: rotate(45deg);
+  background-color: black; }
+
+.cross-line-2 {
+  width: 20px;
+  height: 2px;
+  transform: rotate(-45deg) translate(-14px, -14px);
+  background-color: black; }
+
+.promo-img {
+  background-color: #fff;
+  width: 40%;
+  margin-bottom: 24px;
+  border-radius: 15px; }
+
+.promo-content {
+  background-color: #fff;
+  color: #626264;
+  margin-bottom: 32px; }
+
+.promo-title {
+  background-color: #fff;
+  margin-bottom: 7px; }
+  .promo-titlespan {
+    background-color: #fff;
+    color: #fb6d3a; }
+
+.promo-p {
+  background-color: #fff; }
+
+.promo-btn {
+  padding: 16px;
+  background-color: #503e9d;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center; }
+
 .header {
   width: 100%;
   margin-bottom: 31px;
-  display: flex; }
+  display: flex;
+  margin-left: 14px; }
   .header-button {
     display: flex;
     align-items: center;
@@ -258,7 +363,8 @@ a {
 .explore-channels {
   display: flex;
   flex-direction: row;
-  margin-bottom: 31px; }
+  margin-bottom: 31px;
+  margin-left: 14px; }
 
 .catergories {
   position: relative;
@@ -293,7 +399,8 @@ a {
   margin-bottom: 27px; }
 
 .headline {
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  margin-left: 14px; }
 
 .headline-items {
   list-style: none;
@@ -366,6 +473,9 @@ a {
   font-size: 12px;
   font-weight: 400;
   color: #878787; }
+
+.news {
+  margin-left: 14px; }
 
 .news-2 {
   display: flex;

@@ -410,6 +410,31 @@ a {
   padding-top: 5px;
 }
 
+.headline-likes {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 12px;
+  color: #878787;
+}
+.like {
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  &-img {
+    padding-right: 8px;
+  }
+}
+
+.dislike {
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  &-img {
+    padding-right: 8px;
+  }
+}
+
 .headline-base {
   display: flex;
   flex-direction: row;
@@ -420,6 +445,9 @@ a {
   margin-left: auto;
   margin-top: auto;
   padding: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #878787;
 }
 
 // NEWS

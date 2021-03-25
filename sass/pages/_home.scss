@@ -103,6 +103,37 @@ a {
 
 // CONTAINERS
 
+.logo {
+  position: fixed;
+  top: 33px;
+  left: 59px;
+  z-index: 200;
+  padding: 5px 10px;
+  width: fit-content;
+  background-color: $clr-black;
+  display: flex;
+  transform: skewX(-15deg);
+  overflow: hidden;
+  text-align: center;
+
+  &-text {
+    font-weight: 800;
+    font-size: 29px;
+    color: $clr-white;
+    transform: skewX(15deg);
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+
+  &-img {
+    background-color: transparent;
+    height: 46px;
+    width: 56px;
+    margin-left: 120px;
+    transform: skewX(1deg);
+  }
+}
+
 // SIDEBAR
 
 .sidebar-list {
@@ -201,6 +232,15 @@ a {
       transform: translatex(-35%);
     }
   }
+
+  // .search-img {
+  //   background-color: $clr-white;
+  //   padding: 0;
+  //   position: relative;
+  //   left: 500px;
+  //   top: 5px;
+  //   transform: scale(1.2);
+  // }
 
   &-input {
     margin-left: auto;

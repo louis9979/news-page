@@ -77,6 +77,32 @@ a {
   color: #503e9d;
   background-color: transparent; }
 
+.logo {
+  position: fixed;
+  top: 33px;
+  left: 59px;
+  z-index: 200;
+  padding: 5px 10px;
+  width: fit-content;
+  background-color: #000;
+  display: flex;
+  transform: skewX(-15deg);
+  overflow: hidden;
+  text-align: center; }
+  .logo-text {
+    font-weight: 800;
+    font-size: 29px;
+    color: #fff;
+    transform: skewX(15deg);
+    text-transform: uppercase;
+    background-color: transparent; }
+  .logo-img {
+    background-color: transparent;
+    height: 46px;
+    width: 56px;
+    margin-left: 120px;
+    transform: skewX(1deg); }
+
 .sidebar-list {
   display: flex;
   justify-content: center;

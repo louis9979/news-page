@@ -187,7 +187,11 @@ a {
   position: relative;
   top: 34px;
   z-index: 303;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1); }
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s; }
+  .promotion-card-1:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 15px 30px 5px rgba(0, 0, 0, 0.2); }
 
 .promotion-card-2 {
   display: flex;
@@ -391,7 +395,7 @@ span {
 .explore-channels {
   display: flex;
   flex-direction: row;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   margin-left: 14px; }
 
 .catergories {
@@ -495,7 +499,8 @@ span {
   margin-top: auto; }
 
 .news {
-  margin-left: 14px; }
+  margin-left: 14px;
+  margin-bottom: 32px; }
 
 .news-cards {
   display: flex;
@@ -506,7 +511,7 @@ span {
   display: flex;
   flex-direction: column;
   margin-right: 32px;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   width: calc(33.3% - 32px);
   border-radius: 15px;
   overflow: hidden; }

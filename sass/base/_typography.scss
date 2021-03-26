@@ -1,0 +1,19 @@
+h1,
+h2,
+h3 {
+  color: $heading-primary;
+}
+
+h2 {
+  font-weight: 700;
+  size: 16px;
+}
+
+.time {
+  margin-left: auto;
+  margin-top: auto;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #878787;
+}
